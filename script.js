@@ -9,10 +9,10 @@
     input.addEventListener('input', regex, false);
 
     function regex() {
-        var match = output.textContent.match(new RegExp(input.value, 'g'));
-
         // Reset the text
         output.innerHTML = output.textContent;
+
+        var match = output.textContent.match(new RegExp(input.value, 'g'));
 
         if (match) {
             // Replace!
