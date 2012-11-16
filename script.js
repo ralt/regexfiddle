@@ -17,7 +17,7 @@
         if (match) {
             // Replace!
             match.forEach(function(el) {
-                output.innerHTML = output.innerHTML.replace(new RegExp(el, 'g'), '<span class="highlighted">' + el + '</span>');
+                output.innerHTML = output.textContent.replace(new RegExp(el, 'g'), '<span class="highlighted">' + el + '</span>');
             });
         }
     }
