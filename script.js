@@ -5,9 +5,9 @@
 
     document.addEventListener('DOMContentLoaded', function() {
         var input = document.getElementById('input'),
-        output = document.getElementById('output');
+            output = document.getElementById('output');
 
-        input.addEventListener('keyup', regex, false);
+        input.addEventListener('input', regex, false);
 
         function regex() {
             var match = output.textContent.match(new RegExp(input.value, 'g'));
